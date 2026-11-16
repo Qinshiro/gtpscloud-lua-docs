@@ -17,6 +17,7 @@ The learning pack contains a 33-section API snapshot, 784 minimal API-call examp
 3. [GTPSCloud-API.md](GTPSCloud-API.md): contracts collected from the official API documentation.
 4. [GTPSCloud-API-Examples.md](GTPSCloud-API-Examples.md): practical recipes and minimal-call catalog.
 5. [GTPSCloud-Ingame-Patterns.md](GTPSCloud-Ingame-Patterns.md): patterns from the user-confirmed [Find](reference/Find-Script.lua) and [Help](reference/Help-Script.lua) scripts, included as reference copies; see [Source Notes](SOURCE-NOTES.md).
+6. [GTPSCloud-Additional-Reference.md](GTPSCloud-Additional-Reference.md): user-supplied audio filenames, IDs, colors, and time-formatting notes.
 
 The earlier reference and examples include Indonesian explanatory text. New project guidance and standalone examples are written in English. API names are preserved exactly.
 

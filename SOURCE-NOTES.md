@@ -21,4 +21,6 @@ The three public standalone examples are simplified learning material. Their syn
 
 The large Markdown catalog preserves documentation forms, including conflicting utility conventions. Runtime notes and explicit owner corrections take priority for this project.
 
+The additional reference is an English summary of the owner-supplied `Aditional API.txt`. The source attachment is not included. Its asset and ID lists have not been checked individually on the live server.
+
 Only learning material and explicitly public examples belong in this repository. Do not add private administrative scripts, uploaded attachments, credentials, local tool state, or scratch files.

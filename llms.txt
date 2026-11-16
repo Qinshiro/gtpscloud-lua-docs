@@ -13,6 +13,7 @@
 
 - [Full API Snapshot](GTPSCloud-API.md): 33 sections from the official documentation.
 - [API Examples](GTPSCloud-API-Examples.md): Recipes and 784 minimal-call entries, including alternate utility forms.
+- [Additional Reference](GTPSCloud-Additional-Reference.md): Audio filenames, punch and playmod IDs, button colors, and `os.time()` guidance from a user-supplied attachment.
 - [Official Documentation](https://dash.gtps.cloud/docs): Upstream documentation.
 
 ## Working Source References

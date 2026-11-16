@@ -19,6 +19,8 @@ Use these instructions when generating, reviewing, or modifying Lua scripts for 
 3. Read [GTPSCloud-Runtime-Notes.md](GTPSCloud-Runtime-Notes.md), [GTPSCloud-Ingame-Patterns.md](GTPSCloud-Ingame-Patterns.md), and the user-confirmed scripts in `reference/` for target-build behavior.
 4. Consult the [official documentation](https://dash.gtps.cloud/docs) when local material is incomplete or needs updating.
 
+For audio filenames, punch IDs, playmod/mod IDs, button colors, or manual date formatting, consult [GTPSCloud-Additional-Reference.md](GTPSCloud-Additional-Reference.md). It is supplemental user-provided material. Treat listed values as candidates until the target build confirms them; do not confuse punch IDs with item IDs.
+
 The local reference was collected on November 16, 2026. Examples are learning material, not proof that a binding works on every build. Confirmed target-build behavior and explicit user corrections take precedence over incompatible examples. Record relevant discrepancies rather than silently treating conflicting signatures as equivalent.
 
 The user confirmed that the supplied admin script runs normally. For this project, follow its `os.time()`, `timer.setTimeout(...)`, `timer.clear(...)`, and global static `DiscordBot.method(...)` conventions. Keep event/player instance methods as colon calls. Earlier generated class-signature examples do not override this evidence. Do not assume the script proves unrelated HTTP, database, file, bitwise, or interval bindings.
