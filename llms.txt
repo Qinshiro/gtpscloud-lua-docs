@@ -1,0 +1,39 @@
+# GTPSCloud Lua Learning Pack
+
+> Community API reference, user-confirmed runtime patterns, and Lua examples for AI coding assistants working with GTPSCloud.
+
+## Start Here
+
+- [Agent Instructions](AGENTS.md): Read before writing code. New project guidance and comments should be in English.
+- [Runtime Notes](GTPSCloud-Runtime-Notes.md): User-confirmed Discord and timer conventions, sandbox constraints, and unresolved assumptions.
+- [In-Game Patterns](GTPSCloud-Ingame-Patterns.md): Command input, dialog payload tables, role metadata, sessions, and item operations.
+- [README](README.md): Setup, reading order, and example commands.
+
+## API Reference
+
+- [Full API Snapshot](GTPSCloud-API.md): 33 sections from the official documentation.
+- [API Examples](GTPSCloud-API-Examples.md): Recipes and 784 minimal-call entries, including alternate utility forms.
+- [Official Documentation](https://dash.gtps.cloud/docs): Upstream documentation.
+
+## Working Source References
+
+- [Item Finder](reference/Find-Script.lua): User-confirmed in-game search/dialog implementation.
+- [Dynamic Help](reference/Help-Script.lua): User-confirmed role and command discovery.
+- [Source Notes](SOURCE-NOTES.md): Provenance, publication changes, and verification scope.
+
+## Standalone Adaptations
+
+- [Discord Ping](examples/discord-ping.lua)
+- [Delayed Discord Ping](examples/discord-delayed-ping.lua)
+- [In-Game Dialog](examples/ingame-dialog.lua)
+
+## Essential Constraints
+
+- Do not assume pcall or os.date exists.
+- tryCall falls back to a direct call when pcall is absent; exceptions still propagate.
+- This project's working scripts use os.time(), timer.setTimeout(...), timer.clear(...), and static DiscordBot.method(...) calls.
+- Event and player instance methods use colon syntax.
+- In-game dialog callbacks receive (world, player, data), where data contains dialog_name and buttonClicked.
+- Working command/dialog handlers return true for handled and false for unrelated events. Do not generalize this into cancellation behavior for all callbacks.
+- HTTP, database, file, bitwise, and interval bindings are not confirmed by the supplied working scripts.
+- Never claim live-server verification based only on syntax checks or mocks.

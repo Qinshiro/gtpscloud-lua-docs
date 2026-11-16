@@ -1,0 +1,21 @@
+# Local development and uploads
+.env
+.env.*
+!.env.example
+.codex-attachments/
+.codex/
+.agents/
+.aws/
+scratch/
+shared/
+library-files/
+__pycache__/
+*.pyc
+.DS_Store
+localStorage/
+*.sqlite
+*.sqlite3
+
+# Private administrative source must remain outside the public repository.
+reference/Discord_Admin_Commands-Script.lua
+examples/discord-admin-status.lua
